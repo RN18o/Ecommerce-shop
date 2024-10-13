@@ -13,7 +13,7 @@ import product from "./component/Product/product";
 import Profile from "./component/User/Profile";
 import UserOptions from "./component/layout/Header/userOptions";
 import { useSelector } from "react-redux";
-//import ProtectedRoute from "./component/layout/ProtectedRoute";
+import ProtectedRoute from "./component/layout/ProtectedRoute";
 import Cart from "./component/Cart/Cart";
 import Shipping from "./component/Cart/Shipping";
 import ConfirmOrder from "./component/Cart/ConfirmOrder";
@@ -45,7 +45,7 @@ function App() {
         <Route exact path="/admin/products" Component={Productlist} />
         <Route exact path="/order/success" Component={OrderSuccess} />
         <Route exact path="/admin/product" Component={NewProduct} />
-        {/* <ProtectedRoute exact path="/shipping" Component={Shipping} /> */}
+        <ProtectedRoute exact path="/shipping" Component={Shipping} />
         {/* <Route exact path="/shipping" Component={ProtectedRoute}>
           <Route exact path="/shipping" Component={Shipping} />
         </Route> */}
